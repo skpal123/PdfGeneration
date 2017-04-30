@@ -68,11 +68,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EnableStorePdfFile.aspx" />
     <Content Include="PdfGenerationPage.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnableStorePdfFile.aspx.cs">
+      <DependentUpon>EnableStorePdfFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EnableStorePdfFile.aspx.designer.cs">
+      <DependentUpon>EnableStorePdfFile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PdfGenerationPage.aspx.cs">
       <DependentUpon>PdfGenerationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -81,13 +88,9 @@
       <DependentUpon>PdfGenerationPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PDFdocument\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
